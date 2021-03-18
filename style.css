@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: flex;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.background,
+.background-overlay {
+  background-size: cover;
+  background-position: center center;
+}
+
+.background {
+  height: 100vh;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  background-color: #4b5b68;
+  position: relative;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.player {
+  background-color: rgba(38, 40, 49, 0.5);
+  color: #dbdbdc;
+  border-radius: 50%;
+  padding: 1em;
+  font-size: 3em;
+  width: 1em;
+  text-align: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  z-index: 100;
+}
+.player:hover {
+  color: #262831;
+  background-color: rgba(75, 91, 104, 0.75);
+}
+
+.control {
+  cursor: pointer;
+}
+
+.stations {
+  height: 100vh;
+  background-color: #262831;
+  box-shadow: 0 0 15px #262831;
+  z-index: 100;
+  overflow-y: scroll;
+}
+
+.station {
+  display: -webkit-box;
+  display: flex;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+.station:hover {
+  background-color: #4b5b68;
+}
+
+.station-selected {
+  background-color: #19849f;
+}
+
+.station-icon {
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+  background-size: 16px 16px;
+  background-position: center center;
+  padding: 1em;
+}
+
+.station-title {
+  padding: 1em 1em 1em 0;
+  color: #c5c3c6;
+}
+
+.logo {
+  text-align: center;
+  padding: 1em;
+}
+.logo #galaxy {
+  width: 100px;
+}
+
+::-moz-selection {
+  background-color: transparent;
+  color: #19849f;
+}
+
+::selection {
+  background-color: transparent;
+  color: #19849f;
+}
